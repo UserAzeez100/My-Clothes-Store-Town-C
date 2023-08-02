@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.VerifyAccountActivity"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nestedLayoutItems"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgScreenHead"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/basic_path"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgScreenHead"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verification"
+            android:textAlignment="center"
+            android:textColor="@color/b_white"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgScreenHead"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--=======================================================================================================-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEnterCode"
+            style="@style/Texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/o_enter_verification_code"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#75420C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--=======================================================================================================-->
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinView"
+            android:layout_width="wrap_content"
+            android:cursorVisible="true"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:inputType="number"
+            android:elevation="@dimen/_10sdp"
+            android:textColor="@color/b_white"
+            app:itemWidth="@dimen/_50sdp"
+            app:itemHeight="@dimen/_50sdp"
+            android:autofillHints="phone"
+            android:textSize="@dimen/_18ssp"
+            app:itemRadius="@dimen/_10sdp"
+            app:hideLineWhenFilled="true"
+            android:saveEnabled="true"
+            android:textDirection="locale"
+            app:cursorColor="@color/o_base_color_app"
+            app:itemSpacing="@dimen/_10sdp"
+            style="@style/PinWidget.PinView"
+            android:itemBackground="@color/a_gray_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEnterCode"/>
+        <!--=======================================================================================================-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerifyCode"
+            style="@style/BaseStyleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="@string/o_verify"
+            android:textSize="@dimen/_15ssp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pinView" />
+
+        <!--=======================================================================================================-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvResendCode"
+            style="@style/Texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:text="@string/o_resend_code"
+            android:textColor="@color/a_gray_color"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnVerifyCode" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

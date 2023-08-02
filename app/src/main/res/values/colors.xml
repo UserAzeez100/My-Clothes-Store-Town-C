@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFFFFFF</color>
+    <color name="light">#DCDCDC</color>
+    <color name="black_700">#0D1D43</color>
+
+
+
+    <color name="o_app_color_start">#FDD15A</color>
+    <color name="o_app_color_end">#E60202</color>
+
+    <color name="a_provider_color">#D1D1D1</color>
+    <color name="a_gray_color">#898989</color>
+    <color name="a_brown_color">#8A2E00</color>
+    <color name="a_green_color">#196737</color>
+
+    <color name="o_base_color_app">#E1AD21</color>
+    <color name="navigationAppBar">@color/black</color>
+
+
+    <!--    Register Activity-->
+    <color name="o_tv_log_in_with_already_account">#48A16A</color>
+
+    <!--    Verify Account Activity-->
+    <color name="o_background_boxes_code">#918787</color>
+
+    <!--    Home Fragment-->
+    <color name="o_slider_indicator_selected_color">#5A5A5A</color>
+
+    <!--    Favourite Fragment-->
+    <color name="o_delete_icon_color">#FF0000</color>
+
+    <!--    Dialog Exit-->
+    <color name="o_border_yes_or_no_btn">#DFB879</color>
+    <color name="b_white" >#FFFFFFFF</color>
+    <color name="light_pink">#FFF6F6</color>
+    <color name="profile_gray_color">#5D5E60</color>
+    <color name="brown800_color">#200E32</color>
+    <color name="orange_color">#F85606</color>
+    <color name="green500">#C3C122</color>
+    <color name="red500">#A1CF1A1A</color>
+    <color name="color_location_C57C00">#C57C00</color>
+    <color name="slider_indicator_color_gold200">#E9D27F</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="blue">#0019BA</color>
+
+
+</resources>
+

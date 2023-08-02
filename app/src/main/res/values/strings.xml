@@ -1,0 +1,268 @@
+<resources>
+    <string name="app_name" translatable="false">Town Center Store</string>
+
+    <string name="a_contact_us">Contact us</string>
+    <string name="a_connect_us_on_social_media_facebook_instagram_and_whatsapp">Connect us on social media ,facebook, insttgram and whatsapp</string>
+    <string name="a_dader_group_2023">DaderGroup@2023</string>
+    <string name="a_edit_profile">Edit Profile</string>
+    <string name="a_email">Email</string>
+    <string name="a_user_name">User Name</string>
+    <string name="a_save">save</string>
+    <string name="a_receipt">Receipt</string>
+    <string name="a_my_sales">My Sales</string>
+    <string name="a_m_ahmad">M.Ahmad</string>
+    <string name="a_05555555555" translatable="false">05555555</string>
+    <string name="receipt_date" translatable="false">Mar 22 2022  at  19:08</string>
+    <string name="order_id" translatable="false">-9854</string>
+    <string name="a_discount">Discount</string>
+    <string name="a_25" translatable="false">25₪</string>
+    <string name="a_2225" translatable="false">225₪</string>
+    <string name="a_total">Total</string>
+    <string name="a_cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="a_skip">skip</string>
+    <string name="a_one_of_the_finest_international_fashion_boutiques">One of the finest international fashion boutiques</string>
+    <string name="a_explore_frequently_orders">Explore frequently orders</string>
+    <string name="t">Next</string>
+    <string name="a_old_password">Old Password</string>
+    <string name="a_new_password">New Password</string>
+    <string name="a_re_password">Re Password</string>
+    <string name="a_points">Points:</string>
+    <string name="a_orders">Orders</string>
+    <string name="a_ahmed_kh" translatable="false">Ahmed kh</string>
+    <string name="a_explore_frequently_orders_profile_s">Explore frequently orders</string>
+    <string name="a_change_profile">Change Profile</string>
+    <string name="a_my_points">My Points</string>
+    <string name="a_favourites">Favourites</string>
+    <string name="a_3_items">3 items</string>
+    <string name="a_get_notification">Get Notification</string>
+    <string name="a_language">Language</string>
+    <string name="a_rate_us">Rate us</string>
+    <string name="a_help">Help</string>
+    <string name="a_log_out">Log Out</string>
+    <string name="a_until_mar_22_2022_item" translatable="false">22 Mar.</string>
+    <string name="a_description_tv_item">Description</string>
+    <string name="a_title_prodect_item">Title</string>
+    <string name="a_fructis_item_sales" translatable="false">Fructis</string>
+    <string name="a_25_sales_price" translatable="false">25₪</string>
+    <string name="a_30_minutes_ago">30 minutes ago</string>
+    <string name="a_notification_activity_title">notifications</string>
+
+
+    <string name="bayt_hanun">bayt hanun</string>
+    <string name="mueaskar_jabalia">mueaskar jabalia</string>
+    <string name="tala_alhwa">tala alhwa</string>
+    <string name="alzahra">alzahra</string>
+    <string name="alzawayida">alzawayida</string>
+    <string name="almaghazi">almaghazi</string>
+    <string name="alshujaeia">alshujaeia</string>
+    <string name="alzaytun">alzaytun</string>
+    <string name="dir_albalah">dir albalah</string>
+    <string name="alnusayrat">alnusayrat</string>
+    <string name="khanywns">khanywns</string>
+    <string name="rafah">rafah</string>
+
+
+    <string-array name="o_cities">
+        <item> Bayt Hanun      </item>
+        <item> Mueaskar Jabalia</item>
+        <item> Tala Alhwa      </item>
+        <item> Alzahra         </item>
+        <item> Alzawayida      </item>
+        <item> Almaghazi       </item>
+        <item> Alshujaeia      </item>
+        <item> Alzaytun        </item>
+        <item> Dir Albalah     </item>
+        <item> Alnusayrat      </item>
+        <item> khanywns        </item>
+        <item> Rafah           </item>
+    </string-array>
+
+    <!--    Register Activity-->
+    <string name="o_register">Register</string>
+    <string name="o_add_your_details_to_register">Add your details to register</string>
+    <string name="o_username">Username</string>
+    <string name="o_email">Email</string>
+    <string name="o_phone_number">Phone number</string>
+    <string name="o_password">Password</string>
+    <string name="o_re_password">Re-password</string>
+    <string name="o_title_details">Details</string>
+    <string name="o_already_have_an_account">Already have an account ? </string>
+    <string name="o_log_in">Login</string>
+    <string name="do_not_leave_the_field_blank">Do not leave the field blank</string>
+    <string name="email_not_valid">Email not valid</string>
+    <string name="username_is_too_long">Username is too long</string>
+    <string name="empty_spaces_are_not_allowed">Empty spaces are not allowed</string>
+    <string name="password_is_too_short">Password is too short</string>
+    <string name="passwords_doesnt_matches">Passwords doesn\'t matches</string>
+    <string name="it_must_start_with_970_or_972">It must start with +970 or +972</string>
+    <string name="the_front_of_the_number_must_be_either_59_or_56">The front of the number must be either 59 or 56</string>
+    <string name="fill_in_the_blank_fields">Fill in the blank fields</string>
+    <string name="the_phone_number_must_contain_13_digits">The phone number must contain 13 digits</string>
+    <string name="add_to_cart">Add to cart</string>
+
+    <!--    Verify Account Activity-->
+    <string name="o_enter_verification_code">Enter Verification code</string>
+    <string name="o_verify">Verify</string>
+    <string name="o_resend_code">Resend code ?</string>
+
+    <!--    Home Activity-->
+    <string name="o_welcome_back">Welcome back!</string>
+
+    <!--    Home Fragment-->
+    <string name="o_search_categories_or_product">Search categories or product</string>
+    <string name="o_categories">Categories</string>
+
+    <!--    Search Activity-->
+    <string name="o_research_results_in_categories">Research results in categories</string>
+    <string name="o_research_results_in_products">Research results in products</string>
+
+    <!--    Favourite Fragment-->
+    <string name="o_favourite">Favourite</string>
+
+
+    <!--    Exit Dialog-->
+    <string name="o_warning">Warning</string>
+    <string name="o_are_you_sure_to_exit_the_application">Are you sure to exit the application?</string>
+    <string name="are_you_sure_to_complete_the_purchase">Are you sure to complete the purchase?</string>
+    <string name="o_yes">Yes</string>
+    <string name="o_no">No</string>
+
+    <!--    Rating Dialog-->
+    <string name="o_enjoying_the_app">Enjoying the app?</string>
+    <string name="o_tap_a_star_or_rate_it_on_the_app_store">Tap a star or rate it on the App Store</string>
+
+
+    <string name="parts">Parts</string>
+    <string name="arrange_by">Arrange by :-</string>
+    <string name="most_order">Most Order</string>
+    <string name="highest_price">Highest price</string>
+    <string name="lowest_price">Lowest price</string>
+    <string name="all">All</string>
+    <string name="default_notification_channel_id" translatable="false">default_notification_channel_id</string>
+    <!--    Bottom Sheet Filter-->
+    <string name="o_parts" translatable="false">Parts</string>
+    <string name="o_arrange_by">Arrange by</string>
+    <string name="o_most_requested" translatable="false">Most requested</string>
+    <string name="o_highest_price">Highest price</string>
+    <string name="o_lowest_price">Lowest price</string>
+    <string name="o_all">All</string>
+    <string name="o_least_requested">Least requested</string>
+    <string name="b_my_cart">My Cart</string>
+    <string name="b_total">Total</string>
+    <string name="b_items">items</string>
+    <string name="b_clear_all">Clear All</string>
+    <string name="b_discount">Discount</string>
+    <string name="b_point">Point</string>
+    <string name="b_check_out">Check out</string>
+    <string name="change_password">Change password</string>
+    <string name="b_old_password">Old password</string>
+    <string name="b_new_password">New password</string>
+    <string name="b_confirm">Confirm</string>
+    <string name="b_more_details_about_location">Describe your address</string>
+    <string name="b_log_in">Log in</string>
+    <string name="b_email">Email</string>
+    <string name="b_password">Password</string>
+    <string name="b_forget_password">Forget password?</string>
+    <string name="b_don_t_have_an_account">Dont have an account</string>
+    <string name="b_sign_up">Sign up</string>
+    <string name="b_name">Name</string>
+    <string name="b_price_mark">Price mark</string>
+    <string name="b_color">Color:</string>
+    <string name="b_description">Description</string>
+    <string name="b_product_name">Product name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_added_succesful">Product added succesful</string>
+    <string name="go_to_cart">Go To Cart</string>
+    <string name="shopping">Shopping</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="notification_title">Notification_title</string>
+    <string name="order_12343">Order #12343</string>
+    <string name="canceled">canceled</string>
+    <string name="_21_2_2020" translatable="false">21/2/2020</string>
+    <string name="discount_sale">Discounts</string>
+    <string name="select_the_quantity">Select The quantity</string>
+    <string name="description_details">Description details</string>
+    <string name="strepsils_lemon_sugar_free_lozenge_contains_ingredients_areas">Strepsils lemon sugar free lozenge contains ingredients areas</string>
+    <string name="similar_product">Similar product</string>
+    <string name="create_account">Create account</string>
+    <string name="total_items">Total Items</string>
+    <string name="offer_name">Offer name</string>
+    <string name="price_before">Before price</string>
+    <string name="price_after">After price</string>
+    <string name="call_us">call us</string>
+    <string name="the_cart_is_empty">The cart is empty</string>
+    <string name="enter_the_location">Enter The Location</string>
+    <string name="error_deleted">Error Deleted</string>
+    <string name="are_you_sure_to_log_out">Are you sure to Log out?</string>
+    <string name="entry_error">Entry error!</string>
+    <string name="no_internet_connection">NO INTERNET CONNECTION</string>
+    <string name="check_your_internet_connection_and_try_again">Check your internet connection \n and try again</string>
+    <string name="try_again">Try again</string>
+    <string name="user_not_found">User Not Found</string>
+    <string name="complete_data">Complete Data..</string>
+    <string name="the_quantity_cannot_be_reduced_less_than_1">The quantity cannot be reduced less than 1</string>
+    <string name="choose_the_size_product">Choose the size product</string>
+    <string name="enter_the_search_words">Enter The Search Words</string>
+
+
+    <string name="write_location_manually">Write location manually</string>
+    <string name="user_name">Username</string>
+    <string name="phone_number">Phone number</string>
+    <string name="login">Login</string>
+    <string name="_5_items">5items</string>
+    <string name="delivered">Delivered</string>
+    <string name="on_the_way">On the way</string>
+    <string name="my_orders">My Orders</string>
+    <string name="total">Total</string>
+    <string name="product_name">Product name </string>
+    <string name="your_points">Your points </string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sale_and_discount"> Sale and discount</string>
+    <string name="a_yes">Yes</string>
+    <string name="bottom_sheet_change_p_text">Change password</string>
+    <string name="o_most_order">Most order</string>
+    <string name="click_here_to_locate_your_location">Click here to locate your location</string>
+    <string name="location_permissions_must_be_given">Location permissions must be given</string>
+    <string name="your_current_location">Your Current Location</string>
+    <string name="change_your_password">change Your password</string>
+    <string name="on_bording_1">One of the finest international fashion boutiques</string>
+    <string name="on_bording_2">Delivery on the way</string>
+    <string name="on_bording_3">Delivery Arrived</string>
+    <string name="on_bording_down_1">Get your order by speed delivery</string>
+    <string name="on_bording_down_2">Order arrived at your Place</string>
+    <string name="on_bording_down_3">Order arrived at your Place</string>
+    <string name="not_now_btn_text">Not now</string>
+    <string name="purchase_dialog">Purchase Dialog</string>
+    <string name="country">District</string>
+    <string name="pending">Pending</string>
+    <string name="enter_the_mobile_number_starting_with">Enter the mobile number starting with +</string>
+    <string name="you_don_t_have_any_notifications">you don\'t have any notifications</string>
+    <string name="you_don_t_have_any_orders">You Don\'t Have Any Orders</string>
+    <string name="total_price">total Price</string>
+    <string name="you_don_t_have_any_sales">You Don\'t Have Any Sales</string>
+    <string name="no_result_search">no Result Search</string>
+    <string name="after_discount">after discount</string>
+    <string name="before_discount">before discount</string>
+    <string name="locate_location">Locate Location</string>
+    <string name="rate_us_now">Rate Us Now</string>
+    <string name="use_point">Use Point</string>
+    <string name="total_payment_cart2">Total Payment</string>
+    <string name="size">Size:</string>
+    <string name="styles">Styles</string>
+    <string name="products">Products</string>
+    <string name="verification">Verification</string>
+    <string name="filter">Filter</string>
+    <string name="completed">Completed</string>
+    <string name="clear_cart">Clear Cart</string>
+    <string name="no_favorite_items">No Favorite Items</string>
+    <string name="it_must_be_greater_than_8_characters_and_contain_at_least_one_uppercase_letter_one_lowercase_letter_one_number_and_one_symbol">It must contain at least one of (A-z), (0-9) and one of (+=@#$%^&amp;) symbols</string>
+
+
+</resources>
+
+
+
+

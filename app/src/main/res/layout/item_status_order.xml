@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_2sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:elevation="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_8sdp"
+        android:outlineSpotShadowColor="@color/a_gray_color"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--=======================================================================================================-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvProductPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@drawable/discount_shape"
+                android:fontFamily="@font/candara"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/total_price"
+                android:textAllCaps="false"
+                android:textColor="#095E64"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tvOrderId"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrderId" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/item_size_shape"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:text="2222 $"
+                android:textColor="@color/o_base_color_app"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/tvProductPrice2"
+                app:layout_constraintStart_toEndOf="@+id/tvProductPrice2"
+                app:layout_constraintTop_toTopOf="@+id/tvProductPrice2"
+                 />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Order_536"
+                android:textAllCaps="false"
+                android:background="@drawable/shape_text_category_item"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/o_slider_indicator_selected_color"
+                android:textDirection="locale"
+                android:textSize="@dimen/_13ssp"
+                app:fontFamily="@font/montserrat_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--=======================================================================================================-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvTotalPrice"-->
+<!--                android:layout_width="206dp"-->
+<!--                android:layout_height="47dp"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_marginBottom="@dimen/_10sdp"-->
+<!--                android:text="@string/a_total"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textDirection="locale"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/a_gray_color"-->
+<!--                android:textSize="@dimen/_13ssp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tvOrderId" />-->
+
+            <!--=======================================================================================================-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStatusOrder"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/canceled"
+                android:padding="@dimen/_3sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/candara"
+                android:background="@drawable/shape_btn_pending_fill_orders"
+                android:textColor="@color/b_white"
+                android:textAllCaps="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!--=======================================================================================================-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_21_2_2020"
+                android:textColor="@color/a_provider_color"
+                android:textStyle="bold"
+                android:textDirection="locale"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvStatusOrder"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

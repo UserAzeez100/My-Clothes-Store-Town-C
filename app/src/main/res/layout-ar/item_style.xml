@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:elevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/_90sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgStylePhoto"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/image53"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/imgStyleName"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/b_product_name"
+                android:textAllCaps="false"
+                android:textColor="#9F7327"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toEndOf="@id/imgStylePhoto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStyleDescription"
+                android:layout_width="0dp"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:lines="2"
+                android:textDirection="locale"
+                android:text="@string/b_description"
+                android:textAllCaps="false"
+                android:textColor="#B3B1B1"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgStylePhoto"
+                app:layout_constraintTop_toBottomOf="@id/imgStyleName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/textView7"-->
+<!--        android:layout_width="@dimen/_250sdp"-->
+<!--        android:layout_height="@dimen/_80sdp"-->
+<!--        android:layout_marginVertical="@dimen/_5sdp"-->
+<!--        android:background="@drawable/list_layer_elevation"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_height="@dimen/_90sdp">-->
+
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:id="@+id/imgStylePhoto"-->
+<!--                android:layout_width="@dimen/_80sdp"-->
+<!--                android:layout_height="@dimen/_80sdp"-->
+<!--                android:layout_margin="@dimen/_6sdp"-->
+<!--                android:background="@color/b_white"-->
+<!--                android:layout_marginEnd="@dimen/_8sdp"-->
+<!--                android:src="@drawable/image53"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/imgStyleName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_7sdp"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                android:text="@string/b_product_name"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#9F7327"-->
+<!--                android:textSize="@dimen/_16ssp"-->
+<!--                app:layout_constraintStart_toEndOf="@id/imgStylePhoto"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvStyleDescription"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_7sdp"-->
+<!--                android:layout_marginBottom="@dimen/_7sdp"-->
+<!--                android:layout_marginTop="@dimen/_7sdp"-->
+<!--                android:layout_marginEnd="@dimen/_50sdp"-->
+<!--                android:lines="2"-->
+<!--                android:textDirection="locale"-->
+<!--                android:text="@string/b_description"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#B3B1B1"-->
+<!--                android:textSize="@dimen/_13ssp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@id/imgStylePhoto"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/imgStyleName" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/textView7"-->
+<!--        android:layout_width="@dimen/_250sdp"-->
+<!--        android:layout_height="@dimen/_80sdp"-->
+<!--        android:layout_marginEnd="@dimen/_20sdp"-->
+<!--        android:layout_marginVertical="@dimen/_5sdp"-->
+<!--        android:textDirection="locale"-->
+<!--        android:background="@drawable/list_layer_elevation"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imgStylePhoto"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/imgStylePhoto" />-->
+
+
+
+
+
+
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/imgStylePhoto"-->
+<!--        android:layout_width="@dimen/_85sdp"-->
+<!--        android:layout_height="@dimen/_85sdp"-->
+<!--        android:layout_marginTop="@dimen/_8sdp"-->
+<!--        android:layout_marginStart="@dimen/_20sdp"-->
+<!--        android:layout_marginBottom="@dimen/_5sdp"-->
+<!--        android:src="@drawable/image53"-->
+<!--        android:elevation="@dimen/_3sdp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/imgStyleName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/_7sdp"-->
+<!--        android:layout_marginTop="@dimen/_13sdp"-->
+<!--        android:text="@string/b_product_name"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#9F7327"-->
+<!--        android:textSize="@dimen/_16ssp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imgStylePhoto"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView7" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/tvStyleDescription"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/_7sdp"-->
+<!--        android:layout_marginTop="@dimen/_7sdp"-->
+<!--        android:layout_marginEnd="@dimen/_40sdp"-->
+<!--        android:layout_marginBottom="@dimen/_10sdp"-->
+<!--        android:lines="2"-->
+<!--        android:text="@string/b_description"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#B3B1B1"-->
+<!--        android:textDirection="locale"-->
+<!--        android:textSize="@dimen/_13ssp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/textView7"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textView7"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imgStylePhoto"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imgStyleName" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230163867852",
+    "project_id": "town-center-store",
+    "storage_bucket": "town-center-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230163867852:android:f54c974626824366dffa69",
+        "android_client_info": {
+          "package_name": "com.example.towncenterstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230163867852-t6povbgqm3skgnv2g9fdmv3i7ur5tr6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5nY3MWV6pSzuMPX4tAMga9pyoNiJEa94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230163867852-t6povbgqm3skgnv2g9fdmv3i7ur5tr6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

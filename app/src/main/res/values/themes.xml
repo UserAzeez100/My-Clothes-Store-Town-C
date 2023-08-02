@@ -1,0 +1,91 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TownCenterStore" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/o_app_color_start</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#D7FBF7EC</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="BaseStyleButton" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="android:background" type="drawable">@drawable/shape_base_btn</item>
+        <item name="android:textAllCaps" type="textAllCaps">true</item>
+        <item name="android:textColor" type="textColor">@color/white</item>
+        <item name="android:textSize" type="textSize">@dimen/_18ssp</item>
+        <item name="android:textStyle" type="textStyle">bold</item>
+    </style>
+
+    <style name="Texts" >
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Icons" >
+        <item name="android:tint">@color/black</item>
+    </style>
+
+    <style name="InputTypes" parent="@style/Platform.MaterialComponents.Light">
+        <item name="hintTextColor">@color/black</item>
+    </style>
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/white</item>
+        <item name="boxStrokeColor">@color/selector_text_input_in_profile</item>
+        <item name="hintTextColor">@color/white</item>
+
+    </style>
+
+    <style name="MyTextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="MyTextViewStyleSplash" parent="Widget.MaterialComponents.TextView">
+        <item name="android:shadowColor">#555555</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">8</item>
+        <item name="android:shadowRadius">6</item>
+    </style>
+    <style name="MyTextViewStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:shadowColor">#9AF1D8</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">8</item>
+        <item name="android:shadowRadius">6</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+        <item name="marginHorizontal">@dimen/_30sdp</item>
+    </style>
+
+    <style name="HelperTextEndStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:textColor">@color/a_provider_color</item>
+        <item name="android:gravity">end</item>
+    </style>
+</resources>
+
+

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+    <!--=======================================================================================================-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgScreenHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/register_t_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLogoApp"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginEnd="36dp"
+        android:textDirection="locale"
+        app:layout_constraintBottom_toBottomOf="@+id/imgScreenHead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvScreenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="@string/create_account"
+        android:textColor="@color/white"
+        android:textDirection="locale"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/back_icon"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgScreenHead">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="@dimen/_25sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etUsernameLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:hint="@string/o_username"
+                app:boxStrokeColor="@color/a_gray_color"
+                app:boxStrokeWidth="1.7dp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_170sdp"
+                    android:drawableStart="@drawable/profile_fill"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/black_700"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="@dimen/_10sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--=======================================================================================================-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etEmailLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/o_email"
+                app:boxStrokeColor="@color/a_gray_color"
+                app:boxStrokeWidth="1.7dp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etUsernameLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:drawableStart="@drawable/email_icon"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/black_700"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:padding="@dimen/_10sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--=======================================================================================================-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPhoneNumberLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/phone_number"
+                app:boxStrokeColor="@color/a_gray_color"
+                app:boxStrokeWidth="1.7dp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etEmailLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:drawableStart="@drawable/call_icon"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/black_700"
+                    android:inputType="phone|number"
+                    android:maxLength="13"
+                    android:padding="@dimen/_10sdp"
+                    android:textColorHint="@color/a_provider_color" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="+97259-XXXXXXX"
+                    android:textColor="@color/a_provider_color"
+                    android:textDirection="locale"
+                    android:textSize="@dimen/_10ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--=======================================================================================================-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:hint="@string/o_password"
+                app:boxStrokeColor="@color/a_gray_color"
+                app:boxStrokeWidth="1.5dp"
+                app:endIconMode="password_toggle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etPhoneNumberLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:drawableStart="@drawable/password_icon"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/black_700"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--=======================================================================================================-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etRePasswordLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/o_re_password"
+                app:boxStrokeColor="@color/a_gray_color"
+                app:boxStrokeWidth="1.5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPasswordLayout"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:drawableStart="@drawable/re_password_icon"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/black_700"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textSize="@dimen/_12sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--=======================================================================================================-->
+
+
+            <!--            <androidx.appcompat.widget.AppCompatSpinner-->
+            <!--                android:id="@+id/etSpinnerCities"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginHorizontal="@dimen/_20sdp"-->
+            <!--                android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                android:background="@drawable/spinner_register_shape"-->
+            <!--                android:entries="@array/o_cities"-->
+            <!--                android:minHeight="@dimen/_40sdp"-->
+            <!--                android:paddingStart="@dimen/_15sdp"-->
+            <!--                app:boxStrokeColor="@color/a_gray_color"-->
+            <!--                app:boxStrokeWidth="2dp"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/etRePasswordLayout"-->
+
+            <!--                />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/spinnerLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/spinner_register_shape"
+                android:hint="@string/country"
+                android:textColorHint="@color/a_gray_color"
+                app:boxStrokeColor="@color/a_gray_color"
+                app:boxStrokeWidth="1.7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etRePasswordLayout"
+                app:prefixTextColor="@color/a_provider_color"
+                app:suffixTextColor="@color/a_provider_color" />
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/etSpinnerCities"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:backgroundTint="#00FFFFFF"
+                android:entries="@array/o_cities"
+                android:minHeight="@dimen/_40sdp"
+                android:paddingStart="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/spinnerLayout"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerLayout"
+                app:layout_constraintStart_toStartOf="@+id/spinnerLayout"
+                app:layout_constraintTop_toBottomOf="@id/etRePasswordLayout" />
+
+            <!--=======================================================================================================-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etTitleDetailsLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/o_title_details"
+                app:boxStrokeColor="@color/a_gray_color"
+                app:boxStrokeWidth="1.7dp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSpinnerCities">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTitleDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:drawableStart="@drawable/location_icon2"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/black_700"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:padding="@dimen/_10sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--=======================================================================================================-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnConfirmRegister"
+                style="@style/BaseStyleButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="@string/o_register"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etTitleDetailsLayout" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAlreadyAccount"
+                style="@style/Texts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/o_already_have_an_account"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnConfirmRegister" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/o_log_in"
+                android:textAllCaps="false"
+                android:textColor="@color/o_base_color_app"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toEndOf="@id/tvAlreadyAccount"
+                app:layout_constraintTop_toTopOf="@+id/tvAlreadyAccount" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/o_base_color_app"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/btnConfirmRegister"
+                app:layout_constraintEnd_toEndOf="@id/btnConfirmRegister"
+                app:layout_constraintStart_toStartOf="@id/btnConfirmRegister"
+                app:layout_constraintTop_toTopOf="@id/btnConfirmRegister" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

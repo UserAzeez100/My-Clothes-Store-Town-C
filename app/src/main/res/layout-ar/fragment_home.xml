@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".fragments.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nestedLayoutItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/IntroLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvWelcomeBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/o_welcome_back"
+                android:textColor="@color/o_base_color_app"
+                android:textDirection="locale"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:paddingStart="@dimen/_5sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textDirection="locale"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWelcomeBack" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSearchIcon"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:src="@drawable/search_icon_gruop"
+                android:textDirection="locale"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgIconNotification"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/new_notification_icon"
+                app:layout_constraintEnd_toStartOf="@id/imgSearchIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNumberNotification"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/shape_number_notification"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/ms_reference_sans_serif"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintEnd_toStartOf="@id/imgSearchIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--=======================================================================================================-->
+
+
+        <!--        <com.smarteist.autoimageslider.SliderView-->
+        <!--            android:id="@+id/sliderImages"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_135sdp"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginHorizontal="@dimen/_5sdp"-->
+        <!--            android:layout_marginVertical="@dimen/_10sdp"-->
+        <!--            android:layout_marginTop="@dimen/_10sdp"-->
+        <!--            android:background="@drawable/list_layer_elevation"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/IntroLinear"-->
+        <!--            app:sliderAnimationDuration="600"-->
+        <!--            app:sliderAutoCycleDirection="back_and_forth"-->
+        <!--            app:sliderIndicatorAnimationDuration="600"-->
+        <!--            app:sliderIndicatorEnabled="true"-->
+        <!--            app:sliderIndicatorGravity="center_horizontal|bottom"-->
+        <!--            app:sliderIndicatorMargin="@dimen/_10sdp"-->
+        <!--            app:sliderIndicatorOrientation="horizontal"-->
+        <!--            app:sliderIndicatorPadding="@dimen/_3sdp"-->
+        <!--            app:sliderIndicatorRadius="@dimen/_2sdp"-->
+        <!--            app:sliderIndicatorSelectedColor="@color/o_slider_indicator_selected_color"-->
+        <!--            app:sliderIndicatorUnselectedColor="@color/white"-->
+        <!--            app:sliderScrollTimeInSec="1"-->
+        <!--            tools:ignore="MissingConstraints" />-->
+
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/sliderImages"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/IntroLinear"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorEnabled="true"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="@dimen/_8sdp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="@dimen/_1sdp"
+            app:sliderIndicatorRadius="@dimen/_1sdp"
+            app:sliderIndicatorSelectedColor="@color/slider_indicator_color_gold200"
+            app:sliderIndicatorUnselectedColor="@color/white"
+            app:sliderScrollTimeInSec="1"
+            tools:ignore="MissingConstraints"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/saleLinear"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/shape_base_text"
+            android:elevation="@dimen/_5sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sliderImages">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/sale"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/buy_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:gravity="center"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/sale_and_discount"
+                android:textColor="@color/o_slider_indicator_selected_color"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <!--=======================================================================================================-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:fontFamily="@font/cairo_semi_bold"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:text="@string/o_categories"
+            android:textAllCaps="false"
+            android:textColor="@color/o_base_color_app"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/saleLinear" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCategories">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/category_item" />
+
+                <ProgressBar
+                    android:id="@+id/progressLoadMore"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:visibility="invisible"
+                    android:background="@drawable/list_layer_elevation"
+                    android:indeterminateTint="@color/o_base_color_app"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvCategories" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="32dp"
+            android:indeterminateTint="@color/o_base_color_app"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/nestedScrollView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

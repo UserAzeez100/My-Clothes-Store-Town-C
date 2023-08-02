@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bottom_sheet_shape"
+
+    >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/nestedLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/topLine"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/border_shep"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvArrangeBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="@string/o_arrange_by"
+            android:textAllCaps="false"
+            android:textColor="@color/color_location_C57C00"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--=======================================================================================================-->
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvArrangeBy">
+
+            <!--=======================================================================================================-->
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbMostOrder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/radio_button_selector"
+                android:buttonTint="@color/o_base_color_app"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/most_order"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <!--=======================================================================================================-->
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbHighestPrice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/radio_button_selector"
+                android:buttonTint="@color/o_base_color_app"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/o_highest_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <!--=======================================================================================================-->
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbLowestPrice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/radio_button_selector"
+                android:buttonTint="@color/o_base_color_app"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/o_lowest_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <!--=======================================================================================================-->
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbLeastRequested"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/radio_button_selector"
+                android:buttonTint="@color/o_base_color_app"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/o_least_requested"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConfirmFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/shape_base_btn"
+            android:text="@string/b_confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

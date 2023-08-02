@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="@dimen/_150sdp"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialogs">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCloseIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_icon_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:text="@string/product_added_succesful"
+        android:textAllCaps="false"
+        android:fontFamily="@font/cairo_semi_bold"
+        android:textColor="@color/o_slider_indicator_selected_color"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCart"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/all_btn_o_selector"
+        android:gravity="center"
+        android:text="@string/go_to_cart"
+        android:fontFamily="@font/cairo_semi_bold"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnShop"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/yes_no_btn_selector"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cairo_semi_bold"
+        android:gravity="center"
+        android:text="@string/shopping"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCart"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
