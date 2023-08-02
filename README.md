@@ -1,2 +1,2 @@
-# My-Clothes-Store-Town-c-
-Clothing store app
+# My-Clothes-Store-Town-C
+Clothing store app Android-java😉
